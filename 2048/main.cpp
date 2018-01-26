@@ -6,7 +6,7 @@
 #include "Tile.h"
 
 int main()
-{
+{ 
 	sf::RenderWindow window(sf::VideoMode(550, 700), "2048");
 	// create an array of 3 vertices that define a triangle primitive
 	sf::VertexArray quads(sf::Quads, 4);
@@ -22,7 +22,7 @@ int main()
 	int i = 10;
 	std::printf("%d\n", i);
 
-	
+	//testez si eu acum
 
 	// define the color of the triangle's points
 	for (int i = 0; i < 4; i++)
