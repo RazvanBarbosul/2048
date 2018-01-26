@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 *.suo
 *.db
 *.opendb
@@ -6,15 +7,23 @@
 *.vcxproj
 *.log
 *.lastbuildstate
+=======
+.vs/2048/v15/.suo
+*.log
+>>>>>>> aee07c7cc1cdb1d312e0189444b92b8d4aec0d81
 *.tlog
 *.obj
 *.idb
 *.pdb
 *.exe
 *.ilk
+<<<<<<< HEAD
 *.lastbuildstate
 *.log
 *.vcxproj
 *.db
 .vs/2048/v15/.suo
 .vs/2048/v15/.suo
+=======
+*.pdb
+>>>>>>> aee07c7cc1cdb1d312e0189444b92b8d4aec0d81
