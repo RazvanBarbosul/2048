@@ -3,10 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Tile.cpp"
-#include "Tile.h"
 
 int main()
-{ 
+{
 	sf::RenderWindow window(sf::VideoMode(550, 700), "2048");
 	// create an array of 3 vertices that define a triangle primitive
 	sf::VertexArray quads(sf::Quads, 4);
@@ -18,15 +17,12 @@ int main()
 	quads[3].position = sf::Vector2f(10, 100);
 
 	sf::Color tailColor = sf::Color(255, 255, 122);
-	
-	int i = 10;
-	std::printf("%d\n", i);
 
-<<<<<<< HEAD
-	// print main TEst
-=======
-	//testez si eu acum
->>>>>>> 5c495b91e3ef4961c5d0d049787e6fc0782c8e67
+	Tile myTile1 = Tile::Tile();
+	std::printf("value = %d\nposition (%d, %d)\n", myTile1.getValue(), myTile1.getPosition().x, myTile1.getPosition().y);
+
+	Tile myTile2 = Tile::Tile();
+	std::printf("value = %d\nposition (%d, %d)\n", myTile2.getValue(), myTile2.getPosition().x, myTile2.getPosition().y);
 
 	// define the color of the triangle's points
 	for (int i = 0; i < 4; i++)
