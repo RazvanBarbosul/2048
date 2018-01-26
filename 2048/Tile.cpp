@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include "Tile.h"
 
 Tile::Tile()

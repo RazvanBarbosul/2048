@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\sibel\documents\github\2048\2048\main.cpp(1): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Tile.h
+c:\users\sibel\documents\github\2048\2048\tile.h(1): fatal error C1083: Cannot open include file: 'SFML/OpenGL.hpp': No such file or directory
+  Tile.cpp
+c:\users\sibel\documents\github\2048\2048\tile.cpp(3): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Generating Code...
