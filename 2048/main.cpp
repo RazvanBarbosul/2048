@@ -37,7 +37,7 @@ int main()
 				window.close();
 		}
 
-		window.clear();
+		window.clear(sf::Color(0, 122, 255, 255));
 		window.draw(quads);
 		window.display();
 	}
