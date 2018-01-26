@@ -1,6 +1,2 @@
 ﻿  main.cpp
-  Tile.h
-  Tile.cpp
-  Generating Code...
-Debug\Tile.obj : warning LNK4042: object specified more than once; extras ignored
-  2048.vcxproj -> C:\Users\sibel\Documents\GitHub\2048\Debug\2048.exe
+  2048.vcxproj -> C:\Facultate\Projects\2048\Debug\2048.exe
