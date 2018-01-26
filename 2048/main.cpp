@@ -22,7 +22,7 @@ int main()
 	int i = 10;
 	std::printf("%d\n", i);
 
-	
+	// print main TEst
 
 	// define the color of the triangle's points
 	for (int i = 0; i < 4; i++)
