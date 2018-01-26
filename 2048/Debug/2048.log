@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\sibel\desktop\my projects\2048\2048\tile.h(7): error C2011: 'Tile': 'class' type redefinition
+  c:\users\sibel\desktop\my projects\2048\2048\tile.h(7): note: see declaration of 'Tile'
+  Tile.h
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Tile.cpp
