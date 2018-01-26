@@ -24,6 +24,8 @@ int main()
 	Tile myTile2 = Tile::Tile();
 	std::printf("value = %d\nposition (%d, %d)\n", myTile2.getValue(), myTile2.getPosition().x, myTile2.getPosition().y);
 
+	//test
+
 	// define the color of the triangle's points
 	for (int i = 0; i < 4; i++)
 		quads[i].color = tailColor;
