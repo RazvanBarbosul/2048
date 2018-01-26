@@ -5,12 +5,13 @@
 
 Tile::Tile()
 {
-	this->color = sf::Color(255, 255, 122);
-	this->value = rand() % 2 * 2 + 2;
+}
 
-	int x = rand() % 4;
-	int y = rand() % 4;
-	this->position = sf::Vector2i(x, y);
+Tile::Tile(sf::Vector2i position)
+{	// imi genereaza o patratica goala
+	this->color = sf::Color(255, 255, 122);
+	this->value = 0;
+	this->position = position;
 }
 
 Tile::~Tile()
@@ -20,6 +21,11 @@ Tile::~Tile()
 int Tile::getValue()
 {
 	return value;
+}
+
+void Tile::setValue()
+{
+	value = (rand() % 2 + 1) * 2;
 }
 
 sf::Vector2i Tile::getPosition()

@@ -8,13 +8,15 @@ class Tile
 public:
 	// constructor
 	Tile();
+	Tile(sf::Vector2i position); // pe o anumita pozitie imi face patratele goale
 	~Tile();
 
 	// variabile
-	int getValue();
 
 	// metode
-	sf::Vector2i getPosition();
+	int getValue(); // imi da valoarea patratului
+	void setValue(); // seteaza valoarea patratului cu un nr aleatoriu
+	sf::Vector2i getPosition(); // imi da pozitia patratelului
 
 private:
 	// variabile

@@ -8,6 +8,7 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode(550, 700), "2048");
 	// create an array of 3 vertices that define a triangle primitive
+	
 	sf::VertexArray quads(sf::Quads, 4);
 
 	// define the position of the triangle's points
@@ -18,13 +19,21 @@ int main()
 
 	sf::Color tailColor = sf::Color(255, 255, 122);
 
+	// define the color of the triangle's points
+	for (int i = 0; i < 4; i++)
+		quads[i].color = tailColor;
+
+	
 	Tile myTile1 = Tile::Tile();
 	std::printf("value = %d\nposition (%d, %d)\n", myTile1.getValue(), myTile1.getPosition().x, myTile1.getPosition().y);
 
 	Tile myTile2 = Tile::Tile();
 	std::printf("value = %d\nposition (%d, %d)\n", myTile2.getValue(), myTile2.getPosition().x, myTile2.getPosition().y);
 
-	//2048 text
+	/***************************************************/
+	/*
+	 * 2048 text
+	 */
 	sf::Text text;
 	sf::Font font;
 	
@@ -38,11 +47,12 @@ int main()
 	text.setCharacterSize(60);
 	text.setFillColor(sf::Color(0,0,122));
 	text.setStyle(sf::Text::Bold);
+	/******************************************************/
 
-	// define the color of the triangle's points
-	for (int i = 0; i < 4; i++)
-		quads[i].color = tailColor;
-
+	/******************************************************/
+	/*
+	 * gupdate din OpenGL
+	 */
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -53,11 +63,11 @@ int main()
 		}
 
 		window.clear(sf::Color(0, 122, 255, 255));
-		window.draw(quads);
+	//	window.draw(quads);
 		window.draw(text);
 		window.display();
 	}
-
+	/*********************************************************/
 
 	return 0;
 }

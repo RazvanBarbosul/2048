@@ -1,5 +1,6 @@
 #pragma once
-#include <SFML\System\ve>
+#include "Tile.h"
+
 class Board
 {
 public:
@@ -7,14 +8,16 @@ public:
 	~Board();
 	
 	// variabile
+	Tile board[4][4]; //tabla de joc
 
 	// metode
-	Board* getInstance();
+	Board* getInstance(); // imi arat daca a fost instantiata tabla de joc, folosesc Singleton
 
 private:
 	// constructor
-	Board();
+	Board(); // instantiez o singura data tabla de joc
+			 // creez tabla de joc cu toate patratelele goale
 	
 	// metode
-	static Board* instance;
+	static Board* instance; // mereu intoarce instanta tablei
 };
