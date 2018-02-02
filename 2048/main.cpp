@@ -1,4 +1,3 @@
-#include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +7,7 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode(550, 700), "2048");
 	// create an array of 3 vertices that define a triangle primitive
-	
+
 	sf::VertexArray quads(sf::Quads, 4);
 
 	// define the position of the triangle's points
@@ -22,37 +21,34 @@ int main()
 	// define the color of the triangle's points
 	for (int i = 0; i < 4; i++)
 		quads[i].color = tailColor;
+	
+	Tile sibel = Tile(sf::Vector2i(10, 100));
 
 	
-	Tile myTile1 = Tile::Tile();
-	std::printf("value = %d\nposition (%d, %d)\n", myTile1.getValue(), myTile1.getPosition().x, myTile1.getPosition().y);
-
-	Tile myTile2 = Tile::Tile();
-	std::printf("value = %d\nposition (%d, %d)\n", myTile2.getValue(), myTile2.getPosition().x, myTile2.getPosition().y);
 
 	/***************************************************/
 	/*
-	 * 2048 text
-	 */
+	* 2048 text
+	*/
 	sf::Text text;
 	sf::Font font;
-	
+
 	// Load it from a file
 	if (!font.loadFromFile("arial.ttf"))
 	{
-		
+
 	}
 	text.setFont(font);
 	text.setString("2048");
 	text.setCharacterSize(60);
-	text.setFillColor(sf::Color(0,0,122));
+	text.setFillColor(sf::Color(0, 0, 122));
 	text.setStyle(sf::Text::Bold);
 	/******************************************************/
 
 	/******************************************************/
 	/*
-	 * gupdate din OpenGL
-	 */
+	* gupdate din OpenGL
+	*/
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -63,8 +59,9 @@ int main()
 		}
 
 		window.clear(sf::Color(0, 122, 255, 255));
-	//	window.draw(quads);
+		//	window.draw(quads);
 		window.draw(text);
+		window.draw(sibel.quads(100.f));
 		window.display();
 	}
 	/*********************************************************/

@@ -1,6 +1,7 @@
 #include <SFML\OpenGL.hpp>
 #include <SFML\Graphics.hpp>
 #include <SFML\System\Vector2.hpp>
+#include <SFML\Graphics\Vertex.hpp>
 using namespace std;
 
 class Tile
@@ -16,11 +17,11 @@ public:
 	// metode
 	int getValue(); // imi da valoarea patratului
 	void setValue(); // seteaza valoarea patratului cu un nr aleatoriu
-	sf::Vector2i getPosition(); // imi da pozitia patratelului
+	
+	sf::VertexArray quads(float size); // afisez patratica
 
-private:
 	// variabile
-	sf::Vector2i position;
+	sf::Vector2i pos;
 	int value;
 	sf::Color color;
 
